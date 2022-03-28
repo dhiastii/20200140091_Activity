@@ -82,7 +82,7 @@ MainActivity extends AppCompatActivity {
 
 
                         //membuat obyek untuk pindah halaman
-                        Intent i = new Intent(getApplicationContext(), MainActivity2.class);
+                        Intent i = new Intent(getApplicationContext(),Home_Activity.class);
                         //memasukkan bundle kedalam intent
                         i.putExtras(b);
                         //berpindah ke halaman lain
