@@ -10,14 +10,18 @@ public class ActivityLihatData extends AppCompatActivity {
     //deklarasi variabel dengan jenis data textview
     TextView tvnama, tvnomor;
 
-    Bundle bundle = getIntent().getExtras();
-
-    String nama = bundle.getString("a");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lihat_data);
+
+        tvnama = findViewById(R.id.tvNamaKontak);
+        tvnomor= findViewById(R.id.tvNomorTelepon);
+
+        Bundle bundle = getIntent().getExtras();
+
+        String nama = bundle.getString("a");
         //membuat fungsi untuk mengatur textview nama dan nomor telepon
         //berdasarkan pesan yang dikirimkan dariactivity sebelumnya
         switch (nama)
